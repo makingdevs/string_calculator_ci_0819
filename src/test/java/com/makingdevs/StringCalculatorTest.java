@@ -49,4 +49,15 @@ public class StringCalculatorTest {
     result = sc.add("10\n11,12\n15");
     assertEquals(48, result);
   }
+
+  @Test
+  public void testAnotherDelimiter(){
+    StringCalculator sc = new StringCalculator();
+    int result = sc.add("//;\n4;5;6");
+    assertEquals(15, result);
+    result = sc.add("//#\n1#2#3#3#4#5#6#7#8#9");
+    assertEquals(48, result);
+    result = sc.add("//|\n10|11|12|15");
+    assertEquals(48, result);
+  }
 }
