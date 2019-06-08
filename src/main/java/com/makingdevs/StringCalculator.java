@@ -3,40 +3,32 @@ package com.makingdevs;
 public class StringCalculator {
 
     public int add(String numbers){
-        if(numbers == null){return 0;}
-
-        numbers = numbers.replaceAll("\n",",");
-
-        if(!validaNumbers(numbers)){
-            return 0;
-        }
-                
-        return sumaString(numbers); 
+        if(areNotValidNumbers(numbers)) return 0;
+        numbers = replaceBreakLinesForCommasFor(numbers);
+        return theSumOf(numbers); 
     }
 
-    private boolean validaNumbers(String numbers){
-
-        if(numbers.startsWith(",") 
+    private boolean areNotValidNumbers(String numbers){
+        if(!(numbers == null
+        || numbers.startsWith(",") 
         || numbers.endsWith(",")
         || numbers.contains(",,")
-        || numbers.isEmpty()){
+        || numbers.isEmpty())){
             return false;
         }
-        
         return true;
     }
+
+    private String replaceBreakLinesForCommasFor(String numbers){
+        return numbers.replaceAll("\n",",");
+    }
     
-    private int sumaString(String numbers){
-        int suma = 0;
+    private int theSumOf(String numbers){
+        int sum = 0;
         String[] arrayOfNumbers = numbers.split(",");
-        if(arrayOfNumbers.length > 1){
-            for(String number : arrayOfNumbers){
-                suma += Integer.parseInt(number);
-            }
-            return suma;
-        }else{
-            suma = Integer.parseInt(numbers);
+        for(String number : arrayOfNumbers){
+            sum += Integer.parseInt(number);
         }
-        return suma;
+        return sum;
     }
 }
