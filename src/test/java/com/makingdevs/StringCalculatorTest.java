@@ -27,4 +27,15 @@ public class StringCalculatorTest {
     result = sc.add("8,5");
     assertEquals(13, result);
   }
+
+  @Test
+  public void testAnyNumbers(){
+    StringCalculator sc = new StringCalculator();
+    int result = sc.add("4,5,6");
+    assertEquals(15, result);
+    result = sc.add("1,2,3,3,4,5,6,7,8,9");
+    assertEquals(48, result);
+    result = sc.add("10,11,12,15");
+    assertEquals(48, result);
+  }
 }
