@@ -4,3 +4,8 @@ gradle-app.setting
 !gradle-wrapper.jar
 .gradletasknamecache
 **/build/
+
+.classpath
+.project
+.settings/
+bin/
