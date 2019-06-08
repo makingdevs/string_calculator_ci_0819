@@ -12,5 +12,11 @@ public class StringCalculatorTest {
     assertEquals(0, result);
   }
 
-  
+  @Test
+  public void testOneNumber(){
+    StringCalculator sc = new StringCalculator();
+    int result = sc.add("4");
+    assertEquals(4, result);
+  }
+
 }

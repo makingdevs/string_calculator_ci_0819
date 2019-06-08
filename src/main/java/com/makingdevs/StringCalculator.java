@@ -3,6 +3,7 @@ package com.makingdevs;
 public class StringCalculator {
 
     public int add(String numbers){
-        return 0;
+        if(numbers.equals("")){return 0;} 
+        return Integer.parseInt(numbers);
     }
 }
