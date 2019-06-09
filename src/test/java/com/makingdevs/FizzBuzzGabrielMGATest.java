@@ -9,7 +9,7 @@ public class FizzBuzzGabrielMGATest {
     @Test
     public void divisibleNumbersBetweenThree() {
         FizzBuzzGabrielMGA fzg = new FizzBuzzGabrielMGA();
-        String result = fzg.computer(3);
+        String result = fzg.computer(30);
         assertEquals("Fizz",result);
     }
 }
