@@ -12,4 +12,11 @@ public class FizzBuzzGabrielMGATest {
         String result = fzg.computer(30);
         assertEquals("Fizz",result);
     }
+
+    @Test
+    public void divisibleNumbersBetweenFive() {
+        FizzBuzzGabrielMGA fzg = new FizzBuzzGabrielMGA();
+        String result = fzg.computer(20);
+        assertEquals("Buzz",result);
+    }
 }
