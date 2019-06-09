@@ -6,6 +6,29 @@ import java.util.List;
 public class FizzBuzzGabrielMGA {
 
     public String computer(int number) {
+        return calculateDivisibleNumber(number);
+    }
+
+    public List<String> computer(List<Integer> numbers) {
+
+        List<String> resultNumbersList = new ArrayList<>();
+        String result = "";
+
+        if(areNotListValid(numbers)) return resultNumbersList;
+
+        for(int number : numbers) {
+            result = calculateDivisibleNumber(number);
+            if(result.equals(""))
+                resultNumbersList.add(Integer.toString(number));
+            else
+                resultNumbersList.add(result);
+        }
+
+
+        return resultNumbersList;
+    }
+
+    private String calculateDivisibleNumber(int number){
 
         if (number % 3 == 0 && number % 5 == 0)
             return "FizzBuzz";
@@ -19,24 +42,8 @@ public class FizzBuzzGabrielMGA {
         return "";
     }
 
-    public List<String> computer(List<Integer> numbers) {
-
-        List<String> resultNumbersList = new ArrayList<>();
-
-        if (!(numbers == null || numbers.isEmpty())) {
-            for(int number : numbers) {
-                if(number % 3 == 0 && number % 5 == 0){
-                    resultNumbersList.add("FizzBuzz");
-                } else if (number % 3 == 0) {
-                    resultNumbersList.add("Fizz");
-                } else if (number % 5 == 0) {
-                    resultNumbersList.add("Buzz");
-                } else
-                    resultNumbersList.add(Integer.toString(number));
-            }
-        }
-
-        return resultNumbersList;
+    private boolean areNotListValid(List<Integer> numbers) {
+        return numbers == null || numbers.isEmpty();
     }
 
 }
