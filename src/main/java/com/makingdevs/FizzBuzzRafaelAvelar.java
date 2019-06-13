@@ -1,19 +1,17 @@
 package com.makingdevs;
 
-public class FizzBuzzRafaelAvelar {
+import com.makingdevs.constants.Constants;
 
-    private static final String FIZZ_WORD = "Fizz";
-    private static final String BUZZ_WORD = "Buzz";
-    private static final String FIZZBUZZ_WORD = "FizBuzz";
+public class FizzBuzzRafaelAvelar {
 
     public String compute(int entero){
 
         if(entero % 3 == 0 && entero % 5 == 0){
-            return FIZZBUZZ_WORD;
+            return Constants.FIZZBUZZ_WORD;
         }else if(entero % 3 == 0){
-            return FIZZ_WORD;
+            return Constants.FIZZ_WORD;
         }else if(entero % 5 == 0){
-            return BUZZ_WORD;
+            return Constants.BUZZ_WORD;
         }else{
             return String.valueOf(entero);
         }
