@@ -8,7 +8,21 @@ import java.util.List;
 public class FizzBuzzRafaelAvelar {
 
     public String compute(int entero) {
+        return obtienePalabra(entero);
+    }
 
+    public List<String> compute(List<Integer> enterosList) {
+        List<String> respuestaList = new ArrayList<>();
+
+        if (enterosList != null && !enterosList.isEmpty()) {
+            for (Integer entero : enterosList) {
+                respuestaList.add(obtienePalabra(entero));
+            }
+        }
+        return respuestaList;
+    }
+
+    private String obtienePalabra(int entero) {
         if (entero % 3 == 0 && entero % 5 == 0) {
             return Constants.FIZZBUZZ_WORD;
         } else if (entero % 3 == 0) {
@@ -18,26 +32,5 @@ public class FizzBuzzRafaelAvelar {
         } else {
             return String.valueOf(entero);
         }
-    }
-
-    public List<String> compute(List<Integer> enterosList) {
-        List<String> respuestaList = new ArrayList<>();
-
-        if (enterosList != null && !enterosList.isEmpty()) {
-            for (Integer entero : enterosList) {
-
-                if (entero % 3 == 0 && entero % 5 == 0) {
-                    respuestaList.add(Constants.FIZZBUZZ_WORD);
-                } else if (entero % 3 == 0) {
-                    respuestaList.add(Constants.FIZZ_WORD);
-                } else if (entero % 5 == 0) {
-                    respuestaList.add(Constants.BUZZ_WORD);
-                } else {
-                    respuestaList.add(String.valueOf(entero));
-                }
-
-            }
-        }
-        return respuestaList;
     }
 }
