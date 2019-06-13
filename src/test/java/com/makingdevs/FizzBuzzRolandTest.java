@@ -14,14 +14,14 @@ public class FizzBuzzRolandTest {
         assertEquals("4", result);
         result = fzg.compute(6);
         assertEquals("Fizz", result);
-        result = fzg.compute(5);
-        assertEquals("5", result);
+        result = fzg.compute(9);
+        assertEquals("Fizz", result);
         result = fzg.compute(7);
         assertEquals("7", result);
+        result = fzg.compute(12);
+        assertEquals("Fizz", result);
         result = fzg.compute(8);
         assertEquals("8", result);
-        result = fzg.compute(8);
-        assertEquals("Fizz", result);
     }
 
     @Test
@@ -31,8 +31,6 @@ public class FizzBuzzRolandTest {
         assertEquals("1", result);
         result = fzg.compute(4);
         assertEquals("4", result);
-        result = fzg.compute(6);
-        assertEquals("6", result);
         result = fzg.compute(5);
         assertEquals("Buzz", result);
         result = fzg.compute(7);
@@ -50,11 +48,13 @@ public class FizzBuzzRolandTest {
         assertEquals("FizzBuzz", result);
         result = fzg.compute(15);
         assertEquals("FizzBuzz", result);
+        result = fzg.compute(99);
+        assertEquals("Fizz", result);
         result = fzg.compute(100);
-        assertEquals("100", result);
+        assertEquals("Buzz", result);
         result = fzg.compute(45);
         assertEquals("FizzBuzz", result);
         result = fzg.compute(80);
-        assertEquals("80", result);
+        assertEquals("Buzz", result);
     }
 }
