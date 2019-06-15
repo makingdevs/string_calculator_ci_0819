@@ -2,3 +2,5 @@
 
 ## José Juan Reyes Zuñiga
 ### @neodevelop
+## Rolando Ardelio Cruz Juarez
+### @rolandoArdelio
