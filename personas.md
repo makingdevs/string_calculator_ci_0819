@@ -17,3 +17,5 @@
 
 ## Omar Aparicio Quiroz
 ### @omaraparicio07
+## Edson Servin Mote
+### @EdsonSrvn
