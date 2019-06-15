@@ -14,3 +14,7 @@
 ## Angel Contreras Torres
 ### @angelctmex
 >>>>>>> origin/master
+
+
+## Omar Aparicio Quiroz
+### @omaraparicio07
