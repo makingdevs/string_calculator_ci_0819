@@ -5,3 +5,7 @@
 
 ## Rafael Avelar López
 ### @rafaelksd
+## Cuahuthémoc Palma
+### @temocpalma
+## Angel Contreras Torres
+### @angelctmex
