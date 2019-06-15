@@ -2,6 +2,8 @@
 
 ## José Juan Reyes Zuñiga
 ### @neodevelop
+## Rolando Ardelio Cruz Juarez
+### @rolandoArdelio
 
 ## Rafael Avelar López
 ### @rafaelksd
@@ -9,6 +11,5 @@
 ### @temocpalma
 ## Angel Contreras Torres
 ### @angelctmex
-
 ## Edson Servin Mote
 ### @EdsonSrvn
