@@ -17,4 +17,3 @@
 
 ## Omar Aparicio Quiroz
 ### @omaraparicio07
->>>>>>> d2b1d7b... Agregando Omar Aparicio
