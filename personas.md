@@ -17,3 +17,6 @@
 
 ## Omar Aparicio Quiroz
 ### @omaraparicio07
+
+## Arianna Marcello Contreras
+### @ariMarcello
