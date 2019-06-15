@@ -15,6 +15,11 @@ public class FizzBuzzRoland {
 
     public List<String> compute(List<Integer> numbersList) {
         List<String> respuestaList = new ArrayList<>();
+        if (numbersList != null && !numbersList.isEmpty()) {
+            for (Integer numeroItem : numbersList) {
+                respuestaList.add(compute(numeroItem));
+            }
+        }
         return respuestaList;
     }
 }

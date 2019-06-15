@@ -3,58 +3,80 @@ package com.makingdevs;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class FizzBuzzRolandTest {
 
     @Test
     public void divisibleThree() {
-        FizzBuzzRoland fzg = new FizzBuzzRoland();
-        String result = fzg.compute(3);
+        FizzBuzzRoland fizzBuzzRoland = new FizzBuzzRoland();
+        String result = fizzBuzzRoland.compute(3);
         assertEquals("Fizz", result);
-        result = fzg.compute(4);
+        result = fizzBuzzRoland.compute(4);
         assertEquals("4", result);
-        result = fzg.compute(6);
+        result = fizzBuzzRoland.compute(6);
         assertEquals("Fizz", result);
-        result = fzg.compute(9);
+        result = fizzBuzzRoland.compute(9);
         assertEquals("Fizz", result);
-        result = fzg.compute(7);
+        result = fizzBuzzRoland.compute(7);
         assertEquals("7", result);
-        result = fzg.compute(12);
+        result = fizzBuzzRoland.compute(12);
         assertEquals("Fizz", result);
-        result = fzg.compute(8);
+        result = fizzBuzzRoland.compute(8);
         assertEquals("8", result);
     }
 
     @Test
     public void divisibleFive() {
-        FizzBuzzRoland fzg = new FizzBuzzRoland();
-        String result = fzg.compute(1);
+        FizzBuzzRoland fizzBuzzRoland = new FizzBuzzRoland();
+        String result = fizzBuzzRoland.compute(1);
         assertEquals("1", result);
-        result = fzg.compute(4);
+        result = fizzBuzzRoland.compute(4);
         assertEquals("4", result);
-        result = fzg.compute(5);
+        result = fizzBuzzRoland.compute(5);
         assertEquals("Buzz", result);
-        result = fzg.compute(7);
+        result = fizzBuzzRoland.compute(7);
         assertEquals("7", result);
-        result = fzg.compute(8);
+        result = fizzBuzzRoland.compute(8);
         assertEquals("8", result);
-        result = fzg.compute(10);
+        result = fizzBuzzRoland.compute(10);
         assertEquals("Buzz", result);
     }
 
     @Test
     public void divisibleNumbersThreeAndFive() {
-        FizzBuzzRoland fzg = new FizzBuzzRoland();
-        String result = fzg.compute(30);
+        FizzBuzzRoland fizzBuzzRoland = new FizzBuzzRoland();
+        String result = fizzBuzzRoland.compute(30);
         assertEquals("FizzBuzz", result);
-        result = fzg.compute(15);
+        result = fizzBuzzRoland.compute(15);
         assertEquals("FizzBuzz", result);
-        result = fzg.compute(99);
+        result = fizzBuzzRoland.compute(99);
         assertEquals("Fizz", result);
-        result = fzg.compute(100);
+        result = fizzBuzzRoland.compute(100);
         assertEquals("Buzz", result);
-        result = fzg.compute(45);
+        result = fizzBuzzRoland.compute(45);
         assertEquals("FizzBuzz", result);
-        result = fzg.compute(80);
+        result = fizzBuzzRoland.compute(80);
         assertEquals("Buzz", result);
+    }
+    @Test
+    public void Arraytest() {
+        FizzBuzzRoland fizzBuzzRoland = new FizzBuzzRoland();
+        List<Integer> TestArray = new ArrayList<>();
+        TestArray.add(1);
+        TestArray.add(10);
+        TestArray.add(12);
+        TestArray.add(22);
+        TestArray.add(33);
+        TestArray.add(55);
+        TestArray.add(15);
+        TestArray.add(30);
+        TestArray.add(88);
+        TestArray.add(100);
+        List<String> result = fizzBuzzRoland.compute(TestArray);
+        List<String> expectedArray = Arrays.asList("1","Buzz","Fizz","22","Fizz","Buzz","FizzBuzz","FizzBuzz","88","Buzz");
+        assertEquals(expectedArray, result);
     }
 }
