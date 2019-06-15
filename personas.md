@@ -2,10 +2,6 @@
 
 ## José Juan Reyes Zuñiga
 ### @neodevelop
-<<<<<<< HEAD
-## Rolando Ardelio Cruz Juarez
-### @rolandoArdelio
-=======
 
 ## Rafael Avelar López
 ### @rafaelksd
@@ -13,4 +9,5 @@
 ### @temocpalma
 ## Angel Contreras Torres
 ### @angelctmex
->>>>>>> origin/master
+## Arianna Marcello Contreras
+### @ariMarcello
