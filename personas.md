@@ -13,3 +13,7 @@
 ### @angelctmex
 ## Edson Servin Mote
 ### @EdsonSrvn
+
+
+## Omar Aparicio Quiroz
+### @omaraparicio07
