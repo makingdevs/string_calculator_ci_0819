@@ -2,3 +2,6 @@
 
 ## José Juan Reyes Zuñiga
 ### @neodevelop
+
+## Cuahuthémoc Palma
+### @temocpalma
